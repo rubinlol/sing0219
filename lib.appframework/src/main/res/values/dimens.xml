@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏大小-->
+    <dimen name="toolbar_height">48dip</dimen>
+    <!--通栏按钮大小-->
+    <dimen name="buttonF_height">40dp</dimen>
+    <!--普通按钮大小-->
+    <dimen name="buttonS_width">64dp</dimen>
+    <dimen name="buttonS_height">30dp</dimen>
+
+    <dimen name="button_fllow_w">51dp</dimen>
+    <dimen name="button_fllow_h">24dp</dimen>
+
+    <!--web标题栏图标宽度-->
+
+    <dimen name="tag_fill_l_height">25dp</dimen>
+    <dimen name="tag_fill_s_height">18.5dp</dimen>
+
+
+    <!--按钮圆角大小-->
+    <dimen name="GBL_UIKIT_BUTTON_CORNER">4dp</dimen>
+    <!--输入框圆角大小-->
+    <dimen name="GBL_UIKIT_TEXTVIEW_CORNER">4dp</dimen>
+
+    <dimen name="GBL_UIKIT_LISTITEM_HEIGHT">48dp</dimen>
+
+    <!--先把一些标准化的设置移过来，后面用不上再删除-->
+    <!--以下为视觉规范间距常量 V3.6版本 -->
+    <dimen name="D0">16dp</dimen>
+    <dimen name="D1">12dp</dimen>
+    <dimen name="D2">8dp</dimen>
+    <dimen name="D3">4dp</dimen>
+    <dimen name="D4">2dp</dimen>
+    <dimen name="D5">20dp</dimen>
+    <dimen name="D6">18dp</dimen>
+
+    <!--以下为视觉规范字体大小常量 V3.6版本 -->
+    <dimen name="T0">20dp</dimen>
+    <dimen name="T1">18dp</dimen>
+    <!-- 页面导航栏标题文字大小-36px/18dp -->
+    <dimen name="T2">16dp</dimen>
+    <!-- 内容栏目标题文字大小-32px/16dp -->
+    <dimen name="T3">14dp</dimen>
+    <!-- 正文内容文字大小-28px/14dp -->
+    <dimen name="T4">12dp</dimen>
+    <!-- 页面辅助说明文字大小-24px/12dp -->
+    <dimen name="T6">10dp</dimen>
+    <!-- 20px/10dp -->
+
+    <!--以下为视觉规范头像大小常量 V3.6版本 -->
+    <dimen name="U2">64dp</dimen>
+    <dimen name="U3">48dp</dimen>
+    <dimen name="U4">36dp</dimen>
+    <dimen name="U5">32dp</dimen>
+    <dimen name="U6">24dp</dimen>
+</resources>

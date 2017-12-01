@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--先把一些标准化的设置移过来，后面用不上再删除-->
+    <!--以下为视觉规范颜色常量 V3.6版本 -->
+    <!--以下色值适用于背景颜色、边框颜色、填充颜色 -->
+    <color name="C0">#4CBEFF</color>        <!-- 主题色-橙色 -->
+    <color name="C3">#FF5C50</color>        <!-- 辅助色-暂未应用 -->
+    <color name="C5">#EFEFF4</color>        <!-- 灰色-背景色-灰色 -->
+    <color name="C6">#CCCCCC</color>        <!-- 灰色-外分隔线-大版块 -->
+    <color name="C7">#1A77E0</color>        <!-- 暗橙色-C0实心按钮按压颜色态 + 10%黑 -->
+    <color name="C8">#E8E8E8</color>        <!-- 灰色-内分割线-小块内容-灰色 -->
+    <color name="C9">#B2B2B2</color>        <!-- 灰色-灰色按钮边框 -->
+    <color name="C10">#FFFFFF</color>       <!-- 纯白色 -->
+    <color name="C11">#000000</color>       <!-- 纯黑色 -->
+    <color name="C12">#F7F7F7</color>       <!-- 灰色 -->
+    <color name="C13">#FFE251</color>       <!-- 黄色 -->
+
+    <!--以下色值仅适用于字体颜色 -->
+    <color name="CT0">#4CBEFF</color>       <!-- 文字橙色 -->
+    <color name="CT1">#333333</color>       <!-- 标题深灰 -->
+    <color name="CT2">#999999</color>       <!-- 正文中灰 -->
+    <color name="CT3">#B2B2B2</color>       <!-- 辅助描述字体颜色-浅灰 -->
+    <color name="CT4">#576B95</color>       <!-- 锚点链接文本颜色-蓝灰 -->
+    <color name="CT6">#FFFFFF</color>       <!-- 纯白色 -->
+    <color name="CT7">#000000</color>       <!-- 纯黑色 -->
+    <color name="CT8">#7F7F7F</color>       <!-- 专区导航文字 -->
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 控件主色 默认状态色 -->
+    <color name="GBL_UIKIT_TITLEBAR_LIGHT_BG">#FFFFFFFF</color>
+
+    <!-- 控件主色 默认状态色 -->
+    <color name="GBL_UIKIT_PRIMARYC">#FFfdc042</color>
+    <!-- 控件主色 按压/高亮状态色 + 10%黑色 -->
+    <color name="GBL_UIKIT_PRIMARYC_HIGHLIGHT">#FFfdc042</color>
+    <!-- 控件主色 禁用状态色 50%透明度 -->
+    <color name="GBL_UIKIT_PRIMARYC_DISABLE">#80fdc042</color>
+
+    <!-- 文本主色 默认状态色 -->
+    <color name="GBL_UIKIT_PRIMARYCT">#FFfdc042</color>
+    <!-- 文本主色 按压/高亮状态色 + 10%黑色 -->
+    <!-- 文本主色 禁用状态色 50%透明度 -->
+    <color name="GBL_UIKIT_PRIMARYCT_DISABLE">#80fdc042</color>
+
+    <color name="GBL_UIKIT_WHITE_HIGHLIGHT">#FFF2F2F2</color>
+
+    <color name="GBL_UIKIT_EMPTYTIPS_COLOR">#FF7A94B5</color>
+</resources>

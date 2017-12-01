@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false"> <!-- 按钮非按压 -->
+        <shape>
+            <!-- 圆角大小 -->
+            <solid android:color="@color/C10" />
+            <!-- 默认的颜色 -->
+        </shape>
+    </item>
+
+    <item android:state_pressed="true"> <!-- 按钮按压 -->
+        <shape>
+            <!-- 圆角大小 -->
+            <solid android:color="#f6f6f6" />
+            <!-- 点击后的颜色 -->
+        </shape>
+    </item>
+
+    <item android:state_focused="true"> <!-- 按压状态 -->
+        <shape>
+            <!-- 圆角大小 -->
+            <solid android:color="#f6f6f6" />
+        </shape>
+    </item>
+
+</selector>

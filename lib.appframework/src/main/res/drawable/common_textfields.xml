@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="@color/CT1" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="@color/C10"/>
+            <stroke android:color="@color/C10" android:width="1px"></stroke>
+            <padding
+                android:left="8dp"
+                android:right="5dp"
+                android:top="6dp"
+                android:bottom="0dp" />
+        </shape>
+    </item>
+    <item android:color="@color/CT0" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="@color/C10"/>
+            <stroke android:color="@color/C10" android:width="1px"></stroke>
+            <padding
+                android:left="8dp"
+                android:right="5dp"
+                android:top="6dp"
+                android:bottom="0dp" />
+        </shape>
+    </item>
+</selector>

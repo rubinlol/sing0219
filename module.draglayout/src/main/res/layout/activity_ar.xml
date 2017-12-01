@@ -1,0 +1,31 @@
+<com.tencent.draglayout.test.DragViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/btn"
+        android:text="拖拽我"
+        android:clickable="true"
+        android:textColor="@color/C10"
+        android:background="@color/C11"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="回到原点"
+        android:clickable="true"
+        android:textColor="@color/C11"
+        android:background="@color/C3"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="Hello"
+        android:textColor="@color/C10"
+        android:background="@color/CT0"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+</com.tencent.draglayout.test.DragViewGroup>

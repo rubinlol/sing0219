@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按钮禁用状态-->
+    <item android:state_enabled="false" android:color="@color/GBL_UIKIT_PRIMARYCT_DISABLE" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="@color/GBL_UIKIT_PRIMARYCT_DISABLE"/>
+            <stroke android:color="@color/GBL_UIKIT_PRIMARYCT_DISABLE" android:width="1dp"></stroke>
+        </shape>
+    </item>
+    <!-- 按钮按压时状态-->
+    <item android:state_pressed="true" android:color="@color/CT6" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="@color/GBL_UIKIT_PRIMARYC_HIGHLIGHT"/>
+            <!--Tips:stroke width包含在高宽值内变化-->
+            <stroke android:color="@color/GBL_UIKIT_PRIMARYC_HIGHLIGHT" android:width="1dp"></stroke>
+        </shape>
+    </item>
+    <!-- 按钮选中时状态-->
+    <item android:state_selected="true" android:color="@color/CT6" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="@color/GBL_UIKIT_PRIMARYC_HIGHLIGHT"/>
+            <stroke android:color="@color/GBL_UIKIT_PRIMARYC_HIGHLIGHT" android:width="1dp"></stroke>
+        </shape>
+    </item>
+    <!-- 按钮默认状态-->
+    <item  android:color="@color/CT6" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="@color/GBL_UIKIT_PRIMARYC"/>
+            <stroke android:color="@color/GBL_UIKIT_PRIMARYC" android:width="1dp"></stroke>
+        </shape>
+    </item>
+
+
+
+</selector>

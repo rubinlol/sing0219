@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按钮按压时状态-->
+    <item android:state_pressed="true" android:color="@color/CT6" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="@color/C9"/>
+            <!--Tips:stroke width包含在高宽值内变化-->
+            <stroke android:color="@color/C9" android:width="1dp"></stroke>
+        </shape>
+    </item>
+    <!-- 按钮选中时状态-->
+    <item android:state_selected="true" android:color="@color/CT6" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="@color/C9"/>
+            <stroke android:color="@color/C9" android:width="1dp"></stroke>
+        </shape>
+    </item>
+    <!-- 按钮默认状态-->
+    <item android:color="@color/CT3" >
+        <shape>
+            <corners android:radius="@dimen/GBL_UIKIT_BUTTON_CORNER" />
+            <solid android:color="#0DFFFFFF"/>
+            <stroke android:color="@color/C9" android:width="1dp"></stroke>
+        </shape>
+    </item>
+</selector>
