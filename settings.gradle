@@ -1,1 +1,1 @@
-include ':app', ':module.design', ':lib.appframework', ':module.draglayout', ':module.animation'
+include ':app', ':module.design', ':lib.appframework', ':module.draglayout'
