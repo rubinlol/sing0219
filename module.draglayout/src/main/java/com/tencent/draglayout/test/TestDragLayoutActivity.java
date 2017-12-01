@@ -14,7 +14,6 @@ import com.tencent.draglayout.R;
  * 测试DragViewGroup
  */
 public class TestDragLayoutActivity extends BaseActivity {
-    private static final String TAG = "ARActivity";
 
     public static void show(@NonNull  Context context){
         Intent intent = new Intent(context,TestDragLayoutActivity.class);
