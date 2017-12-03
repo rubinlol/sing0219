@@ -17,29 +17,32 @@ import com.tencent.appframework.swipeback.ViewDragHelper;
 public class DragViewGroup extends LinearLayout {
     private static final String TAG = "DragViewGroup";
     private ViewDragHelper dragHelper;
+    private Context mContext;
 
     private View mDragView;
     private View mAutoBackView;
     private View mEdgeTrackerView;
 
     private Point mAutoBackOriginPos = new Point();
+    private View.OnClickListener mAutoBackClickListener;
 
     public DragViewGroup(Context context) {
         super(context);
-        init();
+        init(context);
     }
 
     public DragViewGroup(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(context);
     }
 
     public DragViewGroup(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init();
+        init(context);
     }
 
-    private void init() {
+    private void init(Context context) {
+        mContext = context;
         dragHelper = ViewDragHelper.create(this, callback);
         dragHelper.setEdgeTrackingEnabled(ViewDragHelper.EDGE_RIGHT);//添加边界检测
     }
@@ -51,9 +54,28 @@ public class DragViewGroup extends LinearLayout {
         mAutoBackOriginPos.y = mAutoBackView.getTop();
     }
 
+    public View findTopChildUnder(int x, int y) {
+        final int childCount = getChildCount();
+        for (int i = childCount - 1; i >= 0; i--) {
+            final View child = getChildAt(i);
+            if (x >= child.getLeft() && x < child.getRight() && y >= child.getTop() && y < child.getBottom()) {
+                return child;
+            }
+        }
+        return null;
+    }
+
     //接管touch事件
     @Override
     public boolean onInterceptTouchEvent(android.view.MotionEvent ev) {
+        if(mAutoBackClickListener != null){
+            final float x = ev.getX();
+            final float y = ev.getY();
+            final View topChild = findTopChildUnder((int) x, (int) y);
+            if(topChild == mAutoBackView){
+                return false;
+            }
+        }
         return dragHelper.shouldInterceptTouchEvent(ev);
     }
 
@@ -70,6 +92,11 @@ public class DragViewGroup extends LinearLayout {
         mDragView = getChildAt(0);
         mAutoBackView = getChildAt(1);
         mEdgeTrackerView = getChildAt(2);
+    }
+
+    public void  setAutoBackViewClickListener(View.OnClickListener listener){
+        mAutoBackClickListener = listener;
+        mAutoBackView.setOnClickListener(mAutoBackClickListener);
     }
 
     public void computeScroll() {

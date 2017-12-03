@@ -216,7 +216,6 @@ public class OperateDialog extends BaseDialog {
         return new Builder(context);
     }
 
-
     /**
      * 构造器模式
      */

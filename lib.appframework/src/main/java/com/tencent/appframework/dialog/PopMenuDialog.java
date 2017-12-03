@@ -211,7 +211,6 @@ public class PopMenuDialog extends BaseDialog {
      * @return
      */
     private void startAnim(boolean isUp, boolean isShow) {
-
         PropertyValuesHolder scaleX = PropertyValuesHolder.ofFloat(View.SCALE_X, 0, 0);
         PropertyValuesHolder scaleY = PropertyValuesHolder.ofFloat(View.SCALE_Y, 0, 0);
         PropertyValuesHolder alpha = PropertyValuesHolder.ofFloat(View.ALPHA, 0f, 1f, 1f);

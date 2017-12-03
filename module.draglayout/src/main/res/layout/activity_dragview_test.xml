@@ -1,4 +1,6 @@
-<com.tencent.draglayout.test.DragViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+<com.tencent.draglayout.test.DragViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dragviewgroup"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
@@ -13,6 +15,7 @@
 
     <TextView
         android:text="回到原点"
+        android:id="@+id/backview"
         android:clickable="true"
         android:textColor="@color/C11"
         android:background="@color/C3"
