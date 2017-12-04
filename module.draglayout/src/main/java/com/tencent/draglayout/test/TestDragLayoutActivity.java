@@ -8,7 +8,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.tencent.appframework.UITools;
-import com.tencent.appframework.activity.BaseActivity;
+import com.tencent.appframework.activity.CommonActivity;
 import com.tencent.appframework.dialog.PopMenuDialog;
 import com.tencent.draglayout.R;
 
@@ -16,7 +16,7 @@ import com.tencent.draglayout.R;
  * Created by rubinqiu on 2017/11/23.
  * 测试DragViewGroup
  */
-public class TestDragLayoutActivity extends BaseActivity {
+public class TestDragLayoutActivity extends CommonActivity {
     private static final String TAG = "TestDragLayoutActivity";
 
     private View autoView;
@@ -33,6 +33,7 @@ public class TestDragLayoutActivity extends BaseActivity {
         DragViewGroup dragll = (DragViewGroup)findViewById(R.id.dragviewgroup);
         autoView = findViewById(R.id.backview);
         dragll.setAutoBackViewClickListener(autoBackViewClickListener);
+        showLoadingDialog(500);
     }
 
     private View.OnClickListener autoBackViewClickListener = new View.OnClickListener() {
