@@ -1,8 +1,5 @@
 package com.tencent.appframework.activity;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-
 import com.tencent.appframework.dialog.LoadingDialog;
 import com.tencent.appframework.thread.ThreadPool;
 
@@ -14,11 +11,6 @@ import com.tencent.appframework.thread.ThreadPool;
 public class CommonActivity extends BaseActivity {
     private static final String TAG = "CommonActivity";
     private LoadingDialog mLoadingDialog;
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     @Override
     public void onDestroy() {
