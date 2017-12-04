@@ -12,11 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <com.tencent.mtgp.app.base.widget.GifLoadingView
-            android:id="@+id/loading_gif"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
     <TextView
         android:id="@+id/tv_loading_label"
         android:layout_width="wrap_content"
