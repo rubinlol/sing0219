@@ -33,7 +33,6 @@ public class TestDragLayoutActivity extends CommonActivity {
         DragViewGroup dragll = (DragViewGroup)findViewById(R.id.dragviewgroup);
         autoView = findViewById(R.id.backview);
         dragll.setAutoBackViewClickListener(autoBackViewClickListener);
-        showLoadingDialog(500);
     }
 
     private View.OnClickListener autoBackViewClickListener = new View.OnClickListener() {
